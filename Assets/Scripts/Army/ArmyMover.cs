@@ -32,12 +32,14 @@ public class ArmyMover : MonoBehaviour
                     {
                         if (!combatEnemy.IsPlayerUnits)
                         {
+                            //если луч попал во вражеский отряд
                             _troop.Battle(combatEnemy);
                         }
                     }
 
                     if (rayHit.collider.TryGetComponent(out EnemyCastle enemyCastle))
                     {
+                        //если луч попал в вражеский замок
                         enemyCastle.Defense(_troop);
                     }
                 }
@@ -48,7 +50,9 @@ public class ArmyMover : MonoBehaviour
             {
                 if (rayHit.collider.TryGetComponent<СombatUnit>(out СombatUnit troop))
                 {
-                    
+                    if (!troop.IsPlayerUnits)
+                        return;
+                    //елси луч попал в наш отряд то, vы можем его передвинуть
                     _troop = troop;
                     if (_troop.IsSelected)
                     {

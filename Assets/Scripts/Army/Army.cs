@@ -47,7 +47,7 @@ public class Army
         return amount;
     }
 
-    ///////
+    
     public void CreateUnit(TypeUnit typeUnit)
     {
         switch (typeUnit)
@@ -59,6 +59,7 @@ public class Army
         }
     }
 
+    //создание похода из множесва типов юнитов
     public Troop CreateTroop(List<TypeUnit> typeUnit, List<int> amount)
     {
         List<Unit> troopUnits = new List<Unit>(typeUnit.Count);
@@ -196,6 +197,7 @@ public class Troop //класс отряда
 
     public void InitBonus(int bonusAttack, int bonusAttackOnDefense, int bonusDefense)
     {
+        //инициализация бонус от строений
         this.bonusAttack = bonusAttack;
         this.bonusAttackOnDefense = bonusAttackOnDefense;
         this.bonusDefense = bonusDefense;
@@ -224,7 +226,7 @@ public class Troop //класс отряда
 }
 
 [Serializable]
-public class Unit //++
+public class Unit
 {
     public int Attack, Defense, Speed;
     public bool IsReady => _timeToReady == 0;
@@ -284,6 +286,7 @@ public class Militia
 
     public void ReadyUnits(Unit unit)
     {
+        //елси юнит готов, то он переходит в список готовых юнитов
         if (unit.IsReady)
         {       
             Amount++;

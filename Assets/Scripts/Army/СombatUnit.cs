@@ -20,14 +20,18 @@ public class СombatUnit : MonoBehaviour
 
     private List<Plane> _planesSelected = new List<Plane>();
     
+    
     private Troop _militias;
     private Troop _shooters;
     private Troop _infantryes;
     private Troop _cavalryes;
-
+    
+    // упорядоченный список подотрядов по их инициативе
     private List<Troop> Troops = new List<Troop>();
 
+    //количество клеток, которые может пройти отряд на этом ходу
     [SerializeField]private int _speed ;
+    
 
     public void StartTurn()
     {
@@ -164,6 +168,7 @@ public class СombatUnit : MonoBehaviour
         
     }
 
+    //выбирает и окрашивает платформы, куда игрок может передвинуть своё войско
     public void Selected()
     {
         if (!IsSelected)
@@ -228,6 +233,7 @@ public class СombatUnit : MonoBehaviour
         }
     }
 
+    //передвижение отряда
     public void Move(Plane plane)
     {
         Debug.Log(111111);

@@ -25,26 +25,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Charecter/Charecter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Charecter/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Turn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ButtonHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Castles/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Charecter/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Army.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Castles/EnemyCastle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ArmyUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Charecter/EnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraMover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Plane.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CastleGenerete.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Castles/PlayerCastle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Army/ArmyMover.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Castles/Castle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Army/Army.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Plane.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Castles/Building.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Army/СombatUnit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Charecter/EnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CastleGenerete.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraMover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Army/ArmyMover.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +89,7 @@
       <workItem from="1606837031099" duration="30052000" />
       <workItem from="1606994619801" duration="18809000" />
       <workItem from="1607080072189" duration="21259000" />
-      <workItem from="1607170567933" duration="1501000" />
+      <workItem from="1607170567933" duration="2710000" />
     </task>
     <servers />
   </component>

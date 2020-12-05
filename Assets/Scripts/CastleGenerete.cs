@@ -10,10 +10,12 @@ public class CastleGenerete : MonoBehaviour
 
     [SerializeField] private Turn turn;
     
+    //"случайная генерация" вражеских замков
     public EnemyCastle InitEnemyCastles(int size, int castleID)
     {
         int posX = Random.Range(0, size)*5;
         int posZ = Random.Range(0, size)*5;
+        
         var castle = Instantiate(castleEnemyPrefab, new Vector3(posX, 0.5f, -posZ), Quaternion.identity).GetComponent<EnemyCastle>();
         var ai = castle.GetComponent<EnemyAI>();
         ai.castle = castle;
@@ -24,10 +26,12 @@ public class CastleGenerete : MonoBehaviour
         return castle;
     }
 
+    //генерация замка игрока
     public PlayerCastle InitPlayerCastle(int size, Player player)
     {
         int posX = Random.Range(0, size)*5;
         int posZ = Random.Range(0, size)*5;
+        
         var castle = Instantiate(castlePlayerPrefab, new Vector3(posX, 0.5f, -posZ), Quaternion.identity).GetComponent<PlayerCastle>();
         player.castle = castle;
         //player.turn = turn;

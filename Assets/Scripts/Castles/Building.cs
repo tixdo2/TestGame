@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//строения, которые может улучшать игрок
 
 public class Building
 {

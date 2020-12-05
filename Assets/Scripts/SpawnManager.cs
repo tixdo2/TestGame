@@ -28,6 +28,7 @@ public class SpawnManager : MonoBehaviour
         CountBots = Random.Range(3, 6);
         _enemyCastles = new List<EnemyCastle>(CountBots);
         planeGrid.InitMap(size);
+        
         for(int i = 0; i < CountBots; i++)
             _enemyCastles.Add(castleGenerete.InitEnemyCastles(size, i));
         _playerCastle = castleGenerete.InitPlayerCastle(size, player);

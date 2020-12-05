@@ -110,6 +110,8 @@ public abstract class Castle : MonoBehaviour
 
     public virtual void CreateTroop(List<TypeUnit> typeUnit, List<int> amount)
     {
+        
+        //создание отряда
         Vector3 castlePosition = transform.position;
         Vector3 combatPosition = new Vector3(castlePosition.x - 5, 0, castlePosition.z); 
         var combatGameObject = Instantiate(CombatUnitPrefab, combatPosition, Quaternion.identity);
@@ -121,6 +123,7 @@ public abstract class Castle : MonoBehaviour
 
     public virtual void Defense(СombatUnit enemyCombatUnit)
     {
+        //создание войска из отрядов оставшихся в замке при атаки на замок
         var castelCombatUnit = InitTroopForDefense();
         
         enemyCombatUnit.Battle(castelCombatUnit);
